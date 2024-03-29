@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*update 2024-03-28*/
+@font-face{
+font-family:"Yu Gothic";
+src: local("Yu Gothic Medium");
+font-weight:400;}
+@font-face{
+font-family:"Yu Gothic";
+src:local("Yu Gothic Bold");
+font-weight:700;}
+body{
+max-width: 768px;
+margin: auto;
+font:var(--e)/1.75 -apple-system,BlinkMacSystemFont,Roboto,"Segoe UI","Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;
+font-variant:tabular-nums;
+background:var(--a);
+color:var(--b);
+line-break:strict;
+word-break:break-word;
+overflow-wrap:break-word;
+text-align:justify;}
+h1{
+font-size:calc(var(--e)*1.5);
+font-weight:400;
+line-height:1.5;}
+a{
+color:var(--c);}
+a:visited{
+color:var(--d);}
+table{
+margin: auto;}
+table,td,th {
+border-collapse: collapse;
+border:1px solid var(--b);}
+.a{
+height:1em;
+width:1em;
+margin:.075em;
+vertical-align:-.2em;}
+.b{
+border-top: 1px solid var(--b);}
+.c{
+text-align: center;}
+.d{
+font-size:calc(var(--e)*.9);}
+@media(prefers-color-scheme:light){
+:root{
+--a:#eee;
+--b:#222;
+--c:#21a;/*元の色#1a0da5　hsl(245, 85%, 35%)*/
+--d:#62a;/*元の色#661fad　hsl(270, 70%, 40%)*/}}
+@media(prefers-color-scheme:dark){
+:root{
+--a:#222;
+--b:#eee;
+--c:#8bf;/*元の色#86b6f9　hsl(215, 91%, 75%)*/
+--d:#c9f;/*元の色#d49cfc　hsl(275, 94%, 80%)*/}}
+:root{
+--e:clamp(1rem,.875rem + .5vw,1.25rem);}
