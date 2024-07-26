@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*update 2024-03-28*/
+/*update 2024-07-22*/
 @font-face{
 font-family:"Yu Gothic";
 src: local("Yu Gothic Medium");
@@ -43,17 +43,20 @@ border-top: 1px solid var(--b);}
 text-align: center;}
 .d{
 font-size:calc(var(--e)*.9);}
+.r{
+text-align: right;
+}
 @media(prefers-color-scheme:light){
 :root{
 --a:#eee;
 --b:#222;
---c:#21a;/*元の色#1a0da5　hsl(245, 85%, 35%)*/
---d:#62a;/*元の色#661fad　hsl(270, 70%, 40%)*/}}
+--c:#21a;
+--d:#62a;}}
 @media(prefers-color-scheme:dark){
 :root{
 --a:#222;
 --b:#eee;
---c:#8bf;/*元の色#86b6f9　hsl(215, 91%, 75%)*/
---d:#c9f;/*元の色#d49cfc　hsl(275, 94%, 80%)*/}}
+--c:#8bf;
+--d:#c9f;}}
 :root{
 --e:clamp(1rem,.875rem + .5vw,1.25rem);}
