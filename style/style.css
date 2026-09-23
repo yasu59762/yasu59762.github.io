@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*update 2024-07-22*/
+/*update 2026-09-23*/
 @font-face{
 font-family:"Yu Gothic";
 src: local("Yu Gothic Medium");
@@ -18,7 +18,7 @@ color:var(--b);
 line-break:strict;
 word-break:break-word;
 overflow-wrap:break-word;
-text-align:justify;}
+text-align: start;}
 h1{
 font-size:calc(var(--e)*1.5);
 font-weight:400;
@@ -44,8 +44,9 @@ text-align: center;}
 .d{
 font-size:calc(var(--e)*.9);}
 .r{
-text-align: right;
-}
+text-align: right;}
+.note {
+color: #666;}
 @media(prefers-color-scheme:light){
 :root{
 --a:#eee;
